@@ -1,0 +1,28 @@
+/* ESTO ES EL NAV BAR  */
+
+nav > ul > li {
+    list-style: none;
+    display: inline;
+    padding: 24px 4px;
+    margin-right: 20px;
+}
+
+div > ul > li {
+    list-style: none;
+    padding-right: 20px;
+    display: inline;
+}
+
+.nav-main-cont {
+    display: flex;
+}
+
+.over-cont {
+    height: 67px;
+}
+
+.nav-sec-cont {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+}

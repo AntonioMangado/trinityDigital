@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <article id="logo">
+                <img id="logo-img" src="../assets/images/logo.jpg" alt="logo">
+            </article>
+
+            <article id="nav-links">
+                <ul>
+                    <li><a id="home-link" href="../index.html">Home</a></li>
+                    <li><a id="biografia-link" href="../pages/biografia.html">About Us</a></li>
+                    <li><a id="portfolio-link" href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a id="contact-link" href="#">Contact Us</a></li> 
+                </ul>
+                <!-- <div class="top"><a href="./pages/contact-us.html">Contact us!</a></div> -->
+            </article>
+        </nav>
+    </header> 
+
+    
+    <main id="contact-main">
+
+        <form action="#contact" id="contact-form">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Introduce nombre..." minlength="3"
+                maxlenght="30" required>
+    
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname" placeholder="Introduce apellidos..." minlength="3"
+                maxlenght="30" required>
+    
+            <label for="fname">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce email..." required>
+    
+            <label for="tlf">Teléfono:</label>
+            <input type="tel" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Introduce teléfono..." required />
+    
+            <label for="places">¿Cuál es tu sitio favorito?:</label>
+            <select id="places" name="places">
+                <option value="beach">playa</option>
+                <option value="mountain">montaña</option>
+                <option value="cities">ciudades</option>
+                <option value="parks">parques de atracciones</option>
+            </select>
+    
+            <label for="comments">¿Observaciones?</label>
+            <textarea rows="2" cols="30" name="comments" wrap="hard"
+                placeholder="Tus observaciones..."></textarea>
+    
+            <label><input type="checkbox" id="accept" value="accept" name="accept"> Acepto los términos legales</label>
+    
+            <label for="spam"><input type="checkbox" id="spam" value="spam" name="spam"> Acepto recibir publicidad</label>
+    
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
+

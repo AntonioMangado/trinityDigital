@@ -115,15 +115,66 @@ article#hero > h3 {
     flex-direction: column;
     width: 70%;
     align-items: center;
+    margin: 20px auto;
 }
 
 input, select, textarea {
     width: 100%;
     margin-top: 5px;
+    padding: 5px 3px;
+    border-radius: 0;
+    border: 1px solid #6300007a;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #6300007a;
+    background-color: rgb(245, 242, 242);
 }
 
 label {
     width: 100%;
     text-align: left;
     margin-top: 15px;
+    color: #b90b0bc9;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+}
+
+input#submit {
+    margin-top: 15px;
+    background-color: #630000ef;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+
+/* ESTO ES EL ABOUT US */
+
+.body-aboutus {
+    color: #b90b0bc9;
+    text-align: center;
+}
+
+#meet-team > h1 {
+    font-size: 3.5em;
+    margin: 40px 30px;
+}
+
+.aboutus-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }

@@ -36,37 +36,36 @@
     <main id="contact-main">
 
         <form action="#contact" id="contact-form">
-            <label for="fname">Nombre:</label>
-            <input type="text" id="fname" name="fname" placeholder="Introduce nombre..." minlength="3"
+            <label for="fname">Company name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Write name..." minlength="3"
                 maxlenght="30" required>
     
-            <label for="lname">Apellidos:</label>
-            <input type="text" id="lname" name="lname" placeholder="Introduce apellidos..." minlength="3"
+            <label for="lname">Name of representative:</label>
+            <input type="text" id="lname" name="lname" placeholder="Write name..." minlength="3"
                 maxlenght="30" required>
     
             <label for="fname">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Introduce email..." required>
+            <input type="email" id="email" name="email" placeholder="Write your email address..." required>
     
-            <label for="tlf">Teléfono:</label>
-            <input type="tel" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Introduce teléfono..." required />
+            <label for="tlf">Phone:</label>
+            <input type="tel" id="tlf" name="tlf" placeholder="Write your phone number..." required />
     
-            <label for="places">¿Cuál es tu sitio favorito?:</label>
-            <select id="places" name="places">
-                <option value="beach">playa</option>
-                <option value="mountain">montaña</option>
-                <option value="cities">ciudades</option>
-                <option value="parks">parques de atracciones</option>
+            <label for="plans">What plan are you interested in?</label>
+            <select id="plans" name="plans">
+                <option value="Standard">Standard</option>
+                <option value="Premium">Premium</option>
+                <option value="Personalised">Personalised</option>
             </select>
     
-            <label for="comments">¿Observaciones?</label>
+            <label for="comments">Tell us briefly about yout project:</label>
             <textarea rows="2" cols="30" name="comments" wrap="hard"
-                placeholder="Tus observaciones..."></textarea>
+                placeholder="Your comments..."></textarea>
     
-            <label><input type="checkbox" id="accept" value="accept" name="accept"> Acepto los términos legales</label>
+            <label class="row" for="accept"><input class="checkbox" type="checkbox" id="accept" value="accept" name="accept">I agree to the Terms of Use.</label>
     
-            <label for="spam"><input type="checkbox" id="spam" value="spam" name="spam"> Acepto recibir publicidad</label>
+            <label class="row" for="spam"><input class="checkbox" type="checkbox" id="spam" value="spam" name="spam">I agree to receive commercial information.</label>
     
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="submit">
         </form>
 
     </main>

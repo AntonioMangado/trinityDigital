@@ -22,10 +22,10 @@
 
             <article id="nav-links">
                 <ul>
-                    <li><a id="home-link" href="../index.html">Home</a></li>
-                    <li><a id="biografia-link" href="#">About Us</a></li>
-                    <li><a id="portfolio-link" href="../pages/portfolio.html">Portfolio</a></li>
-                    <li><a id="contact-link" href="../pages/contact-us.html">Contact Us</a></li> 
+                    <li><a class="nav-link" id="home-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" id="biografia-link" href="#">About Us</a></li>
+                    <li><a class="nav-link" id="portfolio-link" href="../pages/portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" id="contact-link" href="../pages/contact-us.html">Contact Us</a></li> 
                 </ul>
                 <!-- <div class="top"><a href="./pages/contact-us.html">Contact us!</a></div> -->
             </article>
@@ -35,10 +35,47 @@
     <main>
         <section id="meet-team">
             <h1>Meet the people behind the scenes</h1>
-            <img class="aboutus-pic" src="../assets/images/portrait-nargiz.jpg" alt="">
-            <img class="aboutus-pic" src="../assets/images/portrait-aydan.jpg" alt="">
-            <img class="aboutus-pic" src="../assets/images/portrait-seva.jpg" alt="">
-        </section>
-        
 
+            <div class="polaroid">
+                <img class="portrait" src="../assets/images/portrait-nargiz.jpg" alt="5 Terre" style="width:100%">
+                <div class="container">
+                <p><b>Nargiz Rashidli</b></p>
+                <p>CEO and Marketing Manager</p>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <img class="portrait" src="../assets/images/portrait-aydan.jpg" alt="5 Terre" style="width:100%">
+                <div class="container">
+                <p><b>Aydan Seyidova</b></p>
+                <p>Product Manager</p>
+                </div>
+            </div>
+
+            <div class="polaroid">
+                <img class="portrait" src="../assets/images/portrait-seva.jpg" alt="5 Terre" style="width:100%">
+                <div class="container">
+                <p><b>Sevinc Badalova</b></p>
+                <p>Research Manager</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <section id="social-media">
+            <p>Follow us on social media</p>
+            <a href="instagram.com"><img class="sm-icon" src="../assets/images/instagram.png" alt=""></a>
+            <a href="twitter.com"><img class="sm-icon" src="../assets/images/twitter.png" alt=""></a>
+            <a href="facebook.com"><img class="sm-icon" src="../assets/images/facebook.png" alt=""></a>
+        </section>
+
+        <section id="newsletter">
+            <p>Subscribe to our weekly newsletter:</p>
+            <input type="email" name="newsletter" id="newsletter-input" placeholder="Your email here...">
+        </section>
+
+        <section id="disclaimer">
+            <p>All rights reserved. Trinity Digital® - 2023.</p>
+        </section>
+    </footer>

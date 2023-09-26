@@ -22,10 +22,10 @@
 
             <article id="nav-links">
                 <ul>
-                    <li><a id="home-link" href="#">Home</a></li>
-                    <li><a id="biografia-link" href="./pages/biografia.html">About Us</a></li>
-                    <li><a id="portfolio-link" href="./pages/portfolio.html">Portfolio</a></li>
-                    <li><a id="contact-link" href="./pages/contact-us.html">Contact Us</a></li> 
+                    <li><a class="nav-link" id="home-link" href="#">Home</a></li>
+                    <li><a class="nav-link" id="biografia-link" href="./pages/biografia.html">About Us</a></li>
+                    <li><a class="nav-link" id="portfolio-link" href="./pages/portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-link" id="contact-link" href="./pages/contact-us.html">Contact Us</a></li> 
                 </ul>
             </article>
         </nav>
@@ -33,12 +33,66 @@
     
     
     <main>
-        <article id="hero" class="bg">
+        <section id="hero" class="bg">
             <h1>We help you find the kind of talent you need.</h1>
             <h3>Discover how our influencers can elevate your business and reach the right audience.</h3>
-            <div class="top"><a href="./pages/contact-us.html">Contact us</a></div>
-        </article>
+            <img src="./assets/images/round-table.png" alt="round-table">
+            <div class="top"><a class="nav-link" href="./pages/contact-us.html">Contact us</a></div>
+        </section>
+
+        <section id="pricing-plans">
+            <h1>Choose the option that suits you best</h1>
+            <article class="plan-card" id="standard">
+                <div class="plan-title"><b>STANDARD / 300$</b></div>
+                <div class="features">
+                    <ul>
+                        <li>Access to Tier2 Influencers.</li>
+                        <li>No equipment provided.</li>
+                        <li>Limited guidance and social media promotion.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="plan-card" id="premium">
+                <div class="plan-title"><b>PREMIUM / 600$</b></div>
+                <div class="features">
+                    <ul>
+                        <li>Access to Tier1 Influencers.</li>
+                        <li>Videographer provided.</li>
+                        <li>Promotion through all social media channels.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="plan-card" id="personalised">
+                <div class="plan-title"><b>PERSONALISED</b></div>
+                <div class="features">
+                    <ul>
+                        <li>We tailor your experience to your needs.</li>
+                        <li>Contact us for more details.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        
     </main>
+
+    <footer>
+        <section id="social-media">
+            <p>Follow us on social media</p>
+            <a href="instagram.com"><img class="sm-icon" src="./assets/images/instagram.png" alt=""></a>
+            <a href="twitter.com"><img class="sm-icon" src="./assets/images/twitter.png" alt=""></a>
+            <a href="facebook.com"><img class="sm-icon" src="./assets/images/facebook.png" alt=""></a>
+        </section>
+
+        <section id="newsletter">
+            <p>Subscribe to our weekly newsletter:</p>
+            <input type="email" name="newsletter" id="newsletter-input" placeholder="Your email here...">
+        </section>
+
+        <section id="disclaimer">
+            <p>All rights reserved. Trinity Digital® - 2023.</p>
+        </section>
+    </footer>
 
     
 

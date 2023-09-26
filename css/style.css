@@ -13,19 +13,19 @@ nav {
 }
 
 
-a:link {
+.nav-link:link {
     color: #b90b0bc9;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:visited {
+.nav-link:visited {
     color: #b90b0bc9;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
     color: #630000ab;
     background-color: #EEEBDD;
     text-decoration: none;
@@ -63,9 +63,6 @@ a:hover {
 }
 
 div.top{
-    /* position:fixed;
-    bottom:10px;
-    right: 10px; */
     background-color: white;
     padding: 10px;
     margin: 40px;
@@ -81,6 +78,7 @@ div.top{
 
 #hero {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -90,17 +88,71 @@ div.top{
     height: 100vh;
 }
 
+#hero > .hero-flex-cont {
+    display: none;
+}
 
-article#hero > h1 {
+section#hero > h1 {
     font-size: 3.5em;
     margin: 40px 30px;
 }
 
-article#hero > h3 {
+section#hero > h3 {
     font-size: 2em;
     margin: 20px 30px;
 }
 
+#hero > img {
+    display: none;
+}
+
+
+/* ESTO SON LOS PRICING PLANS */
+section#pricing-plans {
+    background-color: #EEEBDD;
+    height: 100vh;
+}
+
+section#pricing-plans > h1 {
+    text-align: center;
+    color: #b90b0bc9;
+}
+
+.plan-card {
+    width: 250px;
+    margin: 50px auto;
+    border: 0px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+
+.plan-title {
+    padding: 13px;
+    text-align: center;
+    /* background-color: #b2edb2e1; */
+    border-bottom: none;
+}
+
+#pricing-plans > #standard {
+    background-color: #b2edb2e1;
+}
+
+#pricing-plans > #premium {
+    background-color: #d0d052e1;
+}
+
+#pricing-plans > #personalised {
+    background-color: #a9a9a9;
+}
+
+.features {
+    padding: 5px;
+    background-color: white;
+    border-top: none;
+    height: 100%;
+}
 
 
 /* ESTO ES LA CONTACT-ME */
@@ -159,6 +211,9 @@ input#submit {
     font-size: 1.2rem;
 }
 
+.form-img {
+    display: none;
+}
 
 
 /* ESTO ES EL ABOUT US */
@@ -177,4 +232,267 @@ input#submit {
     width: 250px;
     height: 250px;
     object-fit: cover;
+}
+
+div.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px auto;
+}
+  
+.portrait {
+    width: 100%;
+}
+  
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+div.container > p {
+    font-size: 1.5rem;
+}
+
+
+
+/* ESTO ES EL PORTFOLIO */
+
+.body-portfolio {
+    background-color: #1B1717;
+    color: white;
+    
+}
+
+#videos {
+    padding: 30px;
+    text-align: center;
+}
+
+video {
+    width: 80%;
+    margin: 20px;
+}
+
+
+
+
+
+/* ESTE ES EL FOOTER */
+
+footer {
+    background-color: #1B1717;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#social-media {
+    padding: 10px;
+}
+
+#newsletter {
+    padding: 10px;
+}
+
+#newsletter > input {
+    width: 70%;
+    border-color: white;
+}
+
+#newsletter > p {
+    margin-top: 0;
+}
+
+#disclaimer {
+    padding-bottom: 10px;
+}
+
+.sm-icon {
+    width: 30px;
+    padding: 5px;
+
+}
+
+@media screen and (min-width: 480px) {
+
+    nav {
+        font-size: 1.3rem;
+    }
+
+    #contact-link {
+        display: inline;
+    }
+
+    div.top {
+        display: none;
+    }
+
+    section#hero > h1 {
+        font-size: 4.5rem;
+        margin: 40px 30px;
+    }
+    
+    section#hero > h3 {
+        font-size: 3em;
+        margin: 20px 30px;
+    }
+
+   
+
+
+
+    section#pricing-plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+    }
+    
+    section#pricing-plans > h1 {
+        font-size: 3em;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        
+    }
+
+    .plan-card {
+        display: inline-block;
+        width: 300px;
+        margin: 20px auto;
+        border: 0px solid;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+
+
+
+    #contact-main {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (min-width: 770px) {
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    section#hero > h1 {
+        font-size: 3.5em;
+        margin-bottom: 0;
+        margin-top: 100px
+    }
+    
+    section#hero > h3 {
+        grid-row: 2;
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 200px;
+    }
+
+    #hero > img {
+        display: inline-block;
+        width: 300px;
+        margin: 0 auto;
+        grid-row: 1 / span 2;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 100px;
+    }
+
+    #newsletter > p {
+        margin-top: 16px;
+    }
+
+    #disclaimer {
+        grid-column: 1 / span 2;
+    }
+
+    #meet-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr;
+        height: 100vh;
+    }
+
+    #meet-team > h1 {
+        grid-column: 1 / span 3;
+        font-size: 2.5em;
+        
+    }
+
+    .portrait {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #contact-main {
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-img {
+        display: inline;
+        margin: auto;
+    }
+
+    #videos {
+        display: grid;
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #videos > h1 {
+        grid-column: 1 / span 4;
+    }
+
+    #videos > #video1 {
+        grid-column: 1 / span 2;
+        margin: 20px auto;
+    }
+
+    #videos > #video2 {
+        grid-column: 3 / span 2;
+        margin: 20px auto;
+    }
+
+    #videos > #video3 {
+        grid-column: 2 / span 2;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #videos {
+        display: grid;
+        grid-template-rows: 100px 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #videos > #video1 {
+        grid-column: 1 / 2;
+        margin: 20px auto;
+    }
+
+    #videos > #video2 {
+        grid-column: 2 / 3;
+        margin: 20px auto;
+    }
+    
+    #videos > #video3 {
+        grid-column: 3 / 4;
+        margin: 20px auto;
+    }
 }
